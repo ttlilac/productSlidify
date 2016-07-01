@@ -1,0 +1,55 @@
+---
+title       : Iris K-mean Clustering Application
+subtitle    : Shinny web application
+author      : Ding Lei
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Introduction
+
+1. Iris Data Exploring
+2. Clustering
+3. Shiny Application
+4. Reference
+
+--- .class #id 
+
+## Iris Data Exploring
+```{r echo=TRUE}
+library(datasets)
+head(iris)
+```
+
+--- .class #id 
+
+## Clustering
+```{r echo=TRUE}
+library(ggplot2)
+irisCluster <- kmeans(iris[, 3:4], 3, nstart = 20)
+irisCluster$cluster <- as.factor(irisCluster$cluster)
+ggplot(iris, aes(Petal.Length, Petal.Width, color = irisCluster$cluster)) + geom_point()
+```
+
+--- .class #id 
+
+## Shiny Application
+
+![width](assets/img/kmeans.png)
+
+--- .class #id 
+
+## Reference
+
+
+
+--- .class #id 
+
+
+
+
