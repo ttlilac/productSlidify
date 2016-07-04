@@ -46,6 +46,9 @@ ggplot(iris, aes(Petal.Length, Petal.Width, color = irisCluster$cluster)) + geom
 
 ## Reference
 
+Shiny App Repo: https://github.com/ttlilac/productAssignment
+
+Shiny App Link: https://ttlilac.shinyapps.io/kmean/
 
 
 --- .class #id 

@@ -48,7 +48,7 @@ irisCluster$cluster <- as.factor(irisCluster$cluster)
 ggplot(iris, aes(Petal.Length, Petal.Width, color = irisCluster$cluster)) + geom_point()
 ```
 
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2-1.png)
+![plot of chunk unnamed-chunk-2](assets/fig/unnamed-chunk-2-1.png)
 
 --- .class #id 
 
@@ -60,6 +60,9 @@ ggplot(iris, aes(Petal.Length, Petal.Width, color = irisCluster$cluster)) + geom
 
 ## Reference
 
+Shiny App Repo: https://github.com/ttlilac/productAssignment
+
+Shiny App Link: https://ttlilac.shinyapps.io/kmean/
 
 
 --- .class #id 
