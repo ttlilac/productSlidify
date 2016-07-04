@@ -16,7 +16,6 @@ knit        : slidify::knit2slides
 1. Iris Data Exploring
 2. Clustering
 3. Shiny Application
-4. Reference
 
 --- .class #id 
 
@@ -57,16 +56,4 @@ ggplot(iris, aes(Petal.Length, Petal.Width, color = irisCluster$cluster)) + geom
 ![width](assets/img/kmeans.png)
 
 --- .class #id 
-
-## Reference
-
-Shiny App Repo: https://github.com/ttlilac/productAssignment
-
-Shiny App Link: https://ttlilac.shinyapps.io/kmean/
-
-
---- .class #id 
-
-
-
 
